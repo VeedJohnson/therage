@@ -1,0 +1,119 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(http-equiv='Cache-control' content='public')
+    block title
+      title The Rage | First of its kind in ABUAD
+    block links
+      link(rel='stylesheet' href='/css/header.css')
+      link(rel='preconnect' href='https://fonts.googleapis.com')
+      link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+      link(href='https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap' rel='stylesheet')
+      link(href='https://fonts.googleapis.com/css2?family=Rye&display=swap' rel='stylesheet')
+      link(rel='icon' type='image/png' href='/favicon.png?v=2')
+      link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+  body
+    .loader-wrapper
+        .loader
+        .loader-section.section-left
+        .loader-section.section-right
+    header
+      .container.head
+        .header
+          a.logo(href='/')
+            .img-area
+              img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/v1648421658/therage/rage-logo-1_p0nhji.png' alt='The Rage')
+            // <p>The Rage</p>
+          .menu-btn
+            span.menu-btn_burger
+        nav.nav
+          ul.menu-nav
+            li.menu-nav_item.active
+              a.menu-nav_link(href='/')
+                | Home
+            li#use-me-1.menu-nav_item
+              a.menu-nav_link(href='/about')
+                | About
+            li#use-me-1.menu-nav_item
+              a.menu-nav_link(href='/howtoplay')
+                | How to play
+            li#use-me-2.menu-nav_item(style='pointer-events: none; opacity: 0.7;')
+              a.menu-nav_link(href='/leaderboard')
+                | Leaderboard
+            li#use-me-3.menu-nav_item
+              a.header-button.reg
+                | REGISTER
+                .button__horizontal
+                .button__vertical
+            li.hide-app
+              p Download our app
+              .app-links
+                a(href='' target='_blank')
+                  i.img-font.fa.fa-apple
+                a(href='' target='_blank')
+                  i.img-font.fa.fa-android
+    //header end
+    block content
+    //register form starts
+    .modal-container.modal-lay
+      .modal.hidden
+        button.close-modal &times;
+        h1 Registration form
+        #error-text.hidden
+        form#reg-form.reg-form(action='/paystack/pay', method='POST')
+          input#user-name.user-input(type='text', name='full_name', placeholder='Full Name')
+          input#user-email.user-input(type='email', name='email', placeholder='Email address')
+          input#user-password.user-input(type='password', name='password', placeholder='Create a pasword')
+          #password-rule.message.hide-me
+            div
+              i#lengthIcon.fa.fa-times
+              p#length.password-contain Should be at least 6 characters
+          input#check-password.user-input(type='password', placeholder='Confirm pasword')
+          input#user-phone.user-input(type='number', name='phone_number', placeholder='Phone number')
+          .amount-to-pay
+            p
+              | Amount to pay: 
+              span(style='font-weight: bold;') NGN 
+            input#amount(type='text', name='amount', placeholder='Amount', value='1000', readonly)
+          input(type='submit', value='Proceed to Payment')
+    .overlay.hidden
+    //register form ends
+    //footer starts
+    footer.footer(style='background-color: #000000;')
+      .container
+        .footer-grid
+          a.nav-logo(href='/')
+            .img-area.footer-image
+              h3 THE RAGE
+              img(src='/images/cossa1.png' alt='COSSA')
+          p Sponsored by COSSA
+          .social-media
+            a(href='https://wa.me/2349063517362?text=Hi,%20I%20heard%20about%20The%20Rage%20' target='_blank')
+              i.img-font.fa.fa-whatsapp
+            a(href='https://www.snapchat.com/add/cossa_abuad21?share_id=RUU0RUYz&locale=en_NG' target='_blank')
+              i.img-font.fa.fa-snapchat
+            a(href='https://www.instagram.com/cossaabuad/?hl=en')
+              i.img-font.fa.fa-instagram
+          p
+            | &copy; 2021/22 COSSA. All Rights Reserved.
+    script(src='https://kit.fontawesome.com/67f2f36e90.js' crossorigin='anonymous')
+    script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+    script(type='text/javascript').
+      AOS.init({
+      duration: 600,
+      });
+      const currentLocation = location.href;
+      const menuItem = document.querySelectorAll(".menu-nav_item a");
+      const menuLength = menuItem.length;
+      for (let i = 0; i < menuLength ; i++) {
+      if (menuItem[i].href === currentLocation) {
+      menuItem[i].classList.add('active-2')
+      }
+      }
+    script(src='js/script.js' async defer)
+    script(src='js/slides.js' async defer)
+    script(src='js/form.js' async defer)

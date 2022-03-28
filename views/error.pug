@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Success
+    link(rel='stylesheet', href='/css/header.css')
+    link(rel='stylesheet', href='/css/error.css')
+  body
+    .modal-container(style='display: flex;')
+      .modal.success
+        p#check &times;
+        h1 Error!
+        p Oops! Your registration was not successful.
+        p Feel free to contact us if you think this error was from us
+        a(href='/') Back to home

@@ -1,0 +1,74 @@
+extends layout
+block content
+    main
+        // INTRO SECTION
+        section.home-section
+            video#background-video(preload='none' autoplay loop muted playsinline poster='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421655/therage/lazy-load_lqjsia.jpg')
+            source(src='https://res.cloudinary.com/dp3caqqpi/video/upload/q_auto/v1648421680/therage/wonderland2_vywx3w.mp4' type='video/mp4')
+            .container
+                .home
+                    h2 COSSA presents
+                    h1.home-name
+                        span T
+                        span H
+                        span E&nbsp;
+                        span.home-name-last R
+                        span.home-name-last A
+                        span.home-name-last G
+                        span.home-name-last E
+                        span.home-name-last !
+                    p
+                     | Do you have what it takes to compete with other ABUAD students in a series of mobile games to win the grand prize?
+                    p.register-now.reg
+                     | register now
+        section.game-info
+            .container
+                .game-info-grid
+                    .game-demo-ctn(data-aos='zoom-in')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421653/therage/dashboard1_hmotvv.png' alt='Splash screen')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421650/therage/Dashboard_owwme7.png' alt='Dashboard')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421656/therage/Leaderboard_ohhyff.png' alt='Profile')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421661/therage/Profile_wvyf7c.png' alt='leaderboard')
+                        div(style='text-align:center')
+                            span.dot
+                            span.dot
+                            span.dot
+                            span.dot
+                    .game-text
+                        h1.game-text-h1(data-aos='fade-left') How fast can you go?
+                        p(data-aos='zoom-in')
+                            span The Rage
+                             |  features 6 exciting easy-to-play games with each game released at a specific time.
+                        p(data-aos='zoom-in')
+                             | Rack up your points when each game is released to climb up the leaderboard and walk away with the grand prize!
+                        .prize-slider
+                            .slider-container
+                                .slide
+                                    p First Position
+                                    h1 NGN 50,000
+                                .slide
+                                    p Second Position
+                                    h1 NGN 30,000
+                                .slide
+                                    p Third Position
+                                    h1 NGN 20,000
+                        p(data-aos='zoom-in')
+                            | Winners also get to be our exclusive guests at the upcoming COSSA dinner! Register now to participate as registration closes on 
+                            span March 30th, 2022 - 11:59PM
+                        p(data-aos='zoom-in')
+                            | Registration costs 
+                            span NGN 1,000
+                             |  only.
+        section.contact
+            .container
+                .contact-grid(data-aos='zoom-in-down')
+                    h3.contact-title
+                     | CONTACT US
+                    p
+                     | Have any questions regarding the game? Feel free to reach out to us. We are eager to entertain your questions &#x1F609;
+                    a(href='https://wa.me/2349063517362?text=Hi,%20I%20heard%20about%20The%20Rage%20')
+                     | chat with us

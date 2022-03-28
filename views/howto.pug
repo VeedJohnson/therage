@@ -1,0 +1,95 @@
+extends layout
+block title 
+    title The Rage | How to play
+block append links
+     link(rel='stylesheet' href='css/howto.css')
+block content
+    main
+        .focus-grid
+            .ctn
+                .glitch(data-text='HOW TO PLAY') HOW TO PLAY
+                .glow HOW TO PLAY
+            .container
+                .scanlines
+        .how-to
+            .container
+                .game-info-grid
+                    .game-demo-ctn(data-aos='zoom-in')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421653/therage/dashboard1_hmotvv.png' alt='Splash screen')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421650/therage/Dashboard_owwme7.png' alt='Dashboard')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421656/therage/Leaderboard_ohhyff.png' alt='Profile')
+                        .game-demo.fade-slide
+                            img(src='https://res.cloudinary.com/dp3caqqpi/image/upload/q_auto/v1648421661/therage/Profile_wvyf7c.png' alt='leaderboard')
+                        div(style='text-align:center')
+                            span.dot
+                            span.dot
+                            span.dot
+                            span.dot
+                    .how-to-info(data-aos='zoom-in')
+                        p
+                            | As you know, The Rage is a game of games with a straightforward idea. Rack up points by playing various games. Here are some steps to get you started:
+                        ol
+                            li
+                                span 1.
+                                |  Register for the game via the website. Save your 
+                                strong email
+                                |  and 
+                                strong password
+                                |  somewhere since you&apos;ll need them to log in to the Rage App.  
+                                p NOTE: Registration costs NGN 1000
+                                p
+                                    | Click 
+                                    span.click-btn.reg here
+                                    |  to register if you haven&apos;t
+                            li
+                                span 2.
+                                |  Download and Open the Rage App.
+                                p
+                                    a.click-btn(href='') Click here for iOs
+                                p
+                                    a.click-btn(href='') Click here for Android
+                            li
+                                span 3.
+                                |  Choose your username, the username chosen will appear on the Leaderboard
+                            li
+                                span 4.
+                                |  Various games will be accessible for play at various times. You will get a notification when a particular game is live. For example: &quot;Sky Fall is now live from 12pm to 1pm.&quot;
+                            li
+                                span 5.
+                                |  Ensure to play all the games because your top score in each will be added up to give you your total points.
+                            li
+                                span 6.
+                                |  The top 3 with the highest total points will be crowned winners of The Rage and are entitled to the grand prize!
+                            li
+                                span 7.
+                                |  Oh and have a lot of fun &#x1F60E;
+                        .game-overview
+                            h1.game-text-h1 Overview of the games
+                            p Here are some of the games you should expect in The Rage:
+                            ol
+                                li(data-aos='zoom-in')
+                                    p.game-title 1. Sky Fall
+                                    //- .game-img
+                                    //-     img(src='/images/skyfall.jpeg' alt='')
+                                    p
+                                    | Sky Fall is an endless runner video game. The player is controlled via the touchscreen. To stay alive and score points, the player (a ball) must avoid obstacles.
+                                    p.game-genre
+                                    span Genre(s): 
+                                    | Endless Runner
+                                li(data-aos='zoom-in')
+                                    p.game-title 2. Anagram
+                                    p
+                                    | Anagram is a tile-based word game in which you rearrange a collection of letter tiles to construct words. Letters from one word or set of words are rearranged to form new words. The game pieces are letters on one side of a set of tiles.
+                                    p.game-genre
+                                    span Genre(s): 
+                                    | Word Game
+                                li(data-aos='zoom-in')
+                                    p.game-title 3. Helix Jump
+                                    p
+                                    | Helix Jump is a game where a ball bounces up and down on a series of circular platforms held up by a pole. By sliding your finger left or right, you spin a platform around until you reach a break in the floor, which will allow the ball to fall to the next level. Of course, your ultimate goal is to reach the bottom of the tower. (remake)
+                                    p.game-genre
+                                    span Genre(s): 
+                                    | Action

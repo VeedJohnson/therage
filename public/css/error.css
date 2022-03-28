@@ -1,0 +1,30 @@
+#check {
+    padding: 4.5rem 2.8rem;
+    background-color: #FF0000;
+    display: inline-block;
+    color: #fff;
+    font-size: 10rem !important;
+    border-radius: 50%;
+}
+
+.success {
+    display: grid;
+    place-items: center;
+}
+.success p {
+    text-align: center;
+}
+
+.success > h1 {
+    color:  #FF0000;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+.success > a {
+    color: black;
+    border: 3px solid #FF0000;
+    border-radius: 40px;
+    padding: .8rem 1.7rem;
+    margin-top: 2rem;
+}

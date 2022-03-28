@@ -1,0 +1,31 @@
+//- extends layout
+//- block content
+//-     main
+//-         .row.justify-content-center
+//-             .col-lg-6.container3.text-white.p-3
+//-                 .container.p-5
+//-                     h3.text-center #{player.full_name} your donation of NGN #{player.amount/100}  was successful
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Success
+    link(rel='stylesheet', href='/css/header.css')
+    link(rel='stylesheet', href='/css/success.css')
+  body
+    .modal-container(style='display: flex;')
+      .modal.success
+        p#check &#x2714;
+        h1 Success!
+        p
+          | #{player.full_name}, Your registration for 
+          span The Rage
+          |  is successful.
+        p
+          | Find out how to play 
+          span#play
+            a(href='/howtoplay') here
+        a(href='/') Back to home
