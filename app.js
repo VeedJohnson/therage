@@ -56,7 +56,6 @@ app.get('/paystack/callback', (req,res) => {
     const ref = req.query.reference;
     verifyPayment(ref, (error,body)=>{
         if(error){
-            //handle errors appropriately
             console.log(error)
             return res.redirect('/error');
         }
