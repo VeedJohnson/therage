@@ -99,6 +99,15 @@ app.get('/error', (req, res)=>{
     res.render('error.pug');
 })
 
+
+const { AwakeHeroku } = require("awake-heroku");
+
+AwakeHeroku.add("http://therage.live");
+AwakeHeroku.add("https://therage.herokuapp.com");
+
+// Start service
+AwakeHeroku.start();
+
 app.listen(port, () => {
     console.log(`App running on port ${port}`)
 });
