@@ -1,5 +1,5 @@
 const paystack = (request) => {
-    const MySecretKey = 'sk_test_d6e14aab9e61b6178917c8dad391e23b19d1c3cb';
+    const MySecretKey = 'sk_live_e028906479c597e2824e76c49c86d2d515944f93';
 
     const initializePayment = (form, mycallback) => {
         const options = {
