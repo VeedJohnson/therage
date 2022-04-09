@@ -102,11 +102,11 @@ app.get('/error', (req, res)=>{
 
 const { AwakeHeroku } = require("awake-heroku");
 
-// AwakeHeroku.add("http://therage.live");
-// AwakeHeroku.add("https://therage.herokuapp.com");
+AwakeHeroku.add("http://therage.live");
+AwakeHeroku.add("https://therage.herokuapp.com");
 
 // Start service
-// AwakeHeroku.start();
+AwakeHeroku.start();
 
 app.listen(port, () => {
     console.log(`App running on port ${port}`)
