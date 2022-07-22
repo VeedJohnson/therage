@@ -1,5 +1,8 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 const paystack = (request) => {
-    const MySecretKey = 'sk_live_e028906479c597e2824e76c49c86d2d515944f93';
+    const MySecretKey = `${process.env.DATABASE}`;
 
     const initializePayment = (form, mycallback) => {
         const options = {
